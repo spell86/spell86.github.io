@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>田龟源五郎-经典动漫角色图鉴与剧情深度解析</title>
+    <meta name="description" content="田龟源五郎是动漫《魔神Z》系列中的核心配角，以独特的龟壳防御和幽默性格著称。本站提供田龟源五郎的角色档案、技能解析、经典语录及同人作品推荐。">
+    <meta name="keywords" content="田龟源五郎, 魔神Z, 龟仙人, 动漫角色, 机械龙神, 赛车比赛">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e63946; /* 机械红 */
+            --secondary-color: #1d3557; /* 深蓝 */
+            --accent-color: #f1faee; /* 浅白 */
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --text-light: #666;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #457b9d 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #c1121f;
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Character Card Grid */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .card-text {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #e9ecef;
+            color: var(--text-light);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        /* Features / Info List */
+        .info-list {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .info-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #fff0f1;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+
+        .info-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .info-content p {
+            color: var(--text-light);
+        }
+
+        /* Quotes Section */
+        .quotes-section {
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        .quote-card {
+            background-color: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .quote-text {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .quote-author {
+            text-align: right;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+            
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .info-item {
+                flex-direction: column;
+            }
+
+            .info-icon {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">田<span>龟源五郎</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#profile">角色档案</a></li>
+                    <li><a href="#abilities">驾驶技能</a></li>
+                    <li><a href="#quotes">经典语录</a></li>
+                    <li><a href="#gallery">图鉴</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1 class="hero-title">田龟源五郎</h1>
+            <p class="hero-subtitle">《魔神Z》系列中不可或缺的赛车手与驾驶教练，以其精湛的龟壳防御术和幽默的驾驶风格征服了无数观众。</p>
+            <a href="#profile" class="btn">探索角色详情</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- 角色档案与简介 -->
+        <section id="profile">
+            <div class="section-header">
+                <h2 class="section-title">角色档案</h2>
+            </div>
+            <div class="info-list">
+                <div class="info-item">
+                    <div class="info-icon">👤</div>
+                    <div class="info-content">
+                        <h3>身份背景</h3>
+                        <p>田龟源五郎是日本漫画《魔神Z》（又名：铁拳无敌零式）及衍生动画、电影中的核心角色之一。他最初是第7区的赛车手，后来成为阿修罗一族的族长，与野口博士关系密切，是驾驶机械龙神（Cybertron）的关键人物。</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">⚡</div>
+                    <div class="info-content">
+                        <h3>性格特点</h3>
+                        <p>源五郎性格豪爽、不拘小节，但对待赛车和驾驶有着极高的专业素养。他常以自嘲的方式自称“龟仙人”的弟子（尽管在正史设定中并未明确师承龟仙人，但常被粉丝戏称），在关键时刻展现出惊人的毅力和领导力。</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🛡️</div>
+                    <div class="info-content">
+                        <h3>招牌技能</h3>
+                        <p>除了驾驶技术，源五郎最著名的特征是其防御能力。他可以像乌龟一样将头缩回龟壳内，形成绝对防御状态，能承受极高的物理冲击，是赛车比赛中应对爆炸和撞击的生存秘诀。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 车辆与驾驶 -->
+        <section id="abilities">
+            <div class="section-header">
+                <h2 class="section-title">机械龙神与驾驶</h2>
+            </div>
+            <div class="character-grid">
+                <article class="card">
+                    <img src="https://picsum.photos/seed/cybertron/400/250" alt="机械龙神 Cybertron" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">机械龙神</h3>
+                        <p class="card-text">源五郎驾驶的超级赛车，拥有自动导航系统、激光炮和强大的推进器，是阿修罗一族智慧的结晶。</p>
+                        <div>
+                            <span class="tag">自动导航</span>
+                            <span class="tag">激光武器</span>
+                            <span class="tag">阿修罗一族</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/seed/racing/400/250" alt="赛车比赛" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">赛车精神</h3>
+                        <p class="card-text">在赛车比赛中，源五郎不仅要对抗对手，还要应对各种突发状况。他的驾驶风格稳健且充满爆发力，经常在绝境中逆转局势。</p>
+                        <div>
+                            <span class="tag">极速挑战</span>
+                            <span class="tag">战术博弈</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://picsum.photos/seed/defend/400/250" alt="龟壳防御" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">龟壳防御术</h3>
+                        <p class="card-text">这是源五郎在车毁人亡时保命的绝技。在高速行驶中，他能瞬间将身体蜷缩，利用龟壳承受毁灭性的冲击，是赛车手生存的必修课。</p>
+                        <div>
+                            <span class="tag">绝对防御</span>
+                            <span class="tag">生存技能</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 经典语录 -->
+        <section id="quotes" class="quotes-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" style="color: #fff;">经典语录</h2>
+                </div>
+                <div class="quote-card">
+                    <p class="quote-text">“只有傻瓜才会在同一条路上摔倒两次，但我田龟源五郎，就是要在那条路上摔倒一百次！”</p>
+                    <p class="quote-author">—— 赛道上的呐喊</p>
+                </div>
+                <div class="quote-card">
+                    <p class="quote-text">“这种程度的爆炸，连我的龟壳都算不上是擦伤！这可是阿修罗一族最坚固的盾牌！”</p>
+                    <p class="quote-author">—— 机械龙神驾驶中</p>
+                </div>
+                <div class="quote-card">
+                    <p class="quote-text">“驾驶不是为了赢，而是为了守护身后的同伴和梦想。”</p>
+                    <p class="quote-author">—— 源五郎的独白</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图鉴与相关 -->
+        <section id="gallery">
+            <div class="section-header">
+                <h2 class="section-title">相关作品与图鉴</h2>
+            </div>
+            <div class="character-grid">
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <h3>《魔神Z》</h3>
+                    <p style="color: #666; margin-top: 10px;">原作漫画及动画，田龟源五郎首次登场，确立赛车手身份。</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <h3>《魔神Z 毁灭者》</h3>
+                    <p style="color: #666; margin-top: 10px;">衍生作品，深入描绘源五郎与机械龙神的羁绊。</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <h3>《魔神Z 反击》</h3>
+                    <p style="color: #666; margin-top: 10px;">再次集结，挑战更高级别的赛车与敌人。</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 田龟源五郎角色资料站. 非官方粉丝站点.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; color: #555;">
+                本站内容仅供学习与交流，相关版权归原作者及版权方所有。
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
