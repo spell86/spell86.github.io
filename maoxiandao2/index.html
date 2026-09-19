@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="冒险岛2.0官方资料站，提供最新版本更新公告、职业平衡调整、副本攻略及新手入门指南。深度解析冒险岛2.0版本内容，帮助玩家掌握游戏核心玩法。">
+    <meta name="keywords" content="冒险岛2.0,冒险岛2,冒险岛,网页游戏,MMORPG,游戏攻略,职业介绍">
+    <title>冒险岛2.0 - 深度版本解析与游戏攻略指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #00a2ff;
+            --secondary-color: #0056b3;
+            --accent-color: #ffcc00;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f4f6f9;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #00a2ff 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><path d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/></g></g></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-gray);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Guide Layout */
+        .guide-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .guide-content h3 {
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .guide-content p {
+            margin-bottom: 20px;
+            color: var(--text-gray);
+        }
+
+        .guide-list {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .guide-list h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .guide-list li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .guide-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Job Section */
+        .jobs-section {
+            background: var(--white);
+            padding: 60px 20px;
+            margin-top: 60px;
+        }
+
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .job-item {
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .job-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .job-icon {
+            width: 60px;
+            height: 60px;
+            background: #f0f8ff;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .job-item h4 {
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav {
+                display: none; /* Simplified for single file demo */
+            }
+
+            .guide-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <span>冒险岛2.0</span> 攻略站
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#features">版本特色</a></li>
+                    <li><a href="#guide">新手指南</a></li>
+                    <li><a href="#jobs">职业介绍</a></li>
+                    <li><a href="#news">最新资讯</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="cta-btn">立即体验</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>重返冒险岛：2.0 版本全新启程</h1>
+            <p>体验更精致的画面、更流畅的动作战斗系统，以及全新的社交与成长机制。探索冒险岛2.0的世界，开启你的传奇之旅。</p>
+            <div class="hero-buttons">
+                <a href="#guide" class="cta-btn" style="background: var(--white); color: var(--primary-color);">查看新手指南</a>
+                <a href="#features" class="btn-secondary">了解版本更新</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Section 1: Features -->
+        <section id="features">
+            <div class="section-title">
+                <h2>2.0 版本核心特色</h2>
+                <p>冒险岛2.0 对游戏底层进行了全面革新，带来前所未有的游戏体验</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>动作战斗系统</h3>
+                    <p>摒弃传统的回合制操作，采用即时动作战斗模式。玩家需要通过走位、连招和技能搭配来应对挑战，战斗更具策略性与打击感。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>无缝开放世界</h3>
+                    <p>告别繁琐的传送点，探索广阔的无缝地图。在野外遭遇野怪、参与世界BOSS战，感受真正的MMORPG大世界冒险氛围。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>高清重制画面</h3>
+                    <p>采用全新的美术引擎，大幅提升角色模型、场景细节和光影效果。经典的角色形象焕然一新，带来视觉盛宴。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2: Guide -->
+        <section id="guide">
+            <div class="section-title">
+                <h2>新手入门指南</h2>
+                <p>快速了解游戏机制，助你快速上手冒险岛2.0</p>
+            </div>
+            <div class="guide-layout">
+                <div class="guide-content">
+                    <h3>1. 职业选择与定位</h3>
+                    <p>在冒险岛2.0中，职业系统进行了重构。每个职业都有其独特的技能树和成长路线。战士类职业侧重近战肉搏与防御，法师类职业擅长范围魔法输出，游侠类则灵活多变。新手玩家建议根据个人喜好选择，或尝试不同职业体验差异。</p>
+                    
+                    <h3>2. 基础战斗技巧</h3>
+                    <p>在战斗中，熟练掌握技能冷却时间至关重要。利用走位躲避敌人的致命攻击，并在技能真空期使用普通攻击补充伤害。合理利用“闪避”和“格挡”机制可以有效减少受到的伤害，提高生存能力。</p>
+
+                    <h3>3. 装备与养成</h3>
+                    <p>装备是提升战力的核心。通过完成主线任务、挑战副本或参与活动获取高品质装备。注意装备的属性搭配，优先提升攻击力、暴击率和暴击伤害等核心数值。同时，不要忽视装备的强化和附魔，这是拉开与其他玩家差距的关键。</p>
+                </div>
+                <aside class="guide-list">
+                    <h3>快速上手清单</h3>
+                    <ul>
+                        <li>完成初始引导任务，熟悉基本操作</li>
+                        <li>优先升级主武器，提升基础攻击力</li>
+                        <li>每日登录领取免费资源与经验加成</li>
+                        <li>加入公会，参与公会任务获取专属奖励</li>
+                        <li>留意世界公告，参与限时活动获取稀有道具</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Section 3: Jobs -->
+        <section id="jobs" class="jobs-section">
+            <div class="section-title">
+                <h2>热门职业一览</h2>
+                <p>当前版本强势职业推荐</p>
+            </div>
+            <div class="jobs-grid">
+                <div class="job-item">
+                    <div class="job-icon">🛡️</div>
+                    <h4>战士</h4>
+                </div>
+                <div class="job-item">
+                    <div class="job-icon">🔥</div>
+                    <h4>法师</h4>
+                </div>
+                <div class="job-item">
+                    <div class="job-icon">🏹</div>
+                    <h4>游侠</h4>
+                </div>
+                <div class="job-item">
+                    <div class="job-icon">🗡️</div>
+                    <h4>刺客</h4>
+                </div>
+                <div class="job-item">
+                    <div class="job-icon">🔮</div>
+                    <h4>牧师</h4>
+                </div>
+                <div class="job-item">
+                    <div class="job-icon">🧙</div>
+                    <h4>术士</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: News -->
+        <section id="news">
+            <div class="section-title">
+                <h2>最新动态</h2>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card" style="padding: 20px;">
+                    <small style="color: #999; display: block; margin-bottom: 10px;">2023-10-25</small>
+                    <h4 style="margin-bottom: 10px;">版本更新公告 v2.0.5</h4>
+                    <p style="font-size: 0.9rem;">本次更新修复了部分已知Bug，并调整了部分职业的技能平衡数值，详情请查看官方公告。</p>
+                </article>
+                <article class="feature-card" style="padding: 20px;">
+                    <small style="color: #999; display: block; margin-bottom: 10px;">2023-10-20</small>
+                    <h4 style="margin-bottom: 10px;">万圣节限定活动开启</h4>
+                    <p style="font-size: 0.9rem;">参与万圣节副本，收集南瓜头，兑换限定时装与稀有宠物。</p>
+                </article>
+                <article class="feature-card" style="padding: 20px;">
+                    <small style="color: #999; display: block; margin-bottom: 10px;">2023-10-15</small>
+                    <h4 style="margin-bottom: 10px;">跨服竞技场赛季结算</h4>
+                    <p style="font-size: 0.9rem;">本季度最强玩家榜单已出炉，前十名玩家将获得专属称号与大量游戏币奖励。</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于冒险岛2.0</h4>
+                <p>冒险岛2.0致力于为玩家提供最纯粹、最刺激的MMORPG体验。我们保留经典的冒险精神，同时融入现代化的游戏设计。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">官方网站</a></li>
+                    <li><a href="#">玩家社区</a></li>
+                    <li><a href="#">客服中心</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>支持与帮助</h4>
+                <ul>
+                    <li><a href="#">新手常见问题</a></li>
+                    <li><a href="#">装备搭配攻略</a></li>
+                    <li><a href="#">副本通关技巧</a></li>
+                    <li><a href="#">账号安全指南</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 冒险岛2.0 攻略站. All Rights Reserved. 本页面为非官方粉丝站，仅供学习交流使用。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
