@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="维多利亚的秘密 2015 - 深度回顾与经典系列解析。本站收录2015年维密秀场盛况、内衣系列发布、超模阵容及经典造型回顾，带你重温那个时尚与激情交织的巅峰年代。">
+    <meta name="keywords" content="维多利亚的秘密, 维密秀, 2015, 维密天使, Victoria's Secret">
+    <title>维多利亚的秘密 2015 - 经典秀场回顾与系列解析</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d81b60;
+            --secondary-color: #880e4f;
+            --accent-color: #f8bbd0;
+            --text-dark: #212121;
+            --text-gray: #616161;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(135deg, #2c0e2e 0%, #4a192c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://picsum.photos/seed/vicsecret2015/1920/1080'); /* Abstract fashion seed */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            mix-blend-mode: overlay;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--white);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+
+        .section-more {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* Highlights Grid */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+
+        /* Show Recap */
+        .show-recap {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .show-timeline {
+            border-left: 2px solid #eee;
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -39px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 3px solid var(--white);
+            box-shadow: 0 0 0 2px var(--primary-color);
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Angels Grid */
+        .angels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .angel-card {
+            background: var(--white);
+            border-radius: 50%;
+            overflow: hidden;
+            aspect-ratio: 1;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .angel-card:hover {
+            transform: scale(1.05);
+        }
+
+        .angel-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 60px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                padding: 20px 0;
+                gap: 15px;
+                text-align: center;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .show-recap {
+                padding: 20px;
+            }
+            
+            .show-timeline {
+                margin-left: 10px;
+                padding-left: 20px;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                <span>VS</span> 维多利亚的秘密
+            </a>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#show">秀场回顾</a></li>
+                    <li><a href="#collections">经典系列</a></li>
+                    <li><a href="#angels">天使阵容</a></li>
+                    <li><a href="#history">历史渊源</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>维多利亚的秘密 2015</h1>
+                <p>回顾2015年度大秀的华丽盛况，探索极致奢华的内衣设计与梦幻般的舞台效果。</p>
+                <a href="#show" class="btn">浏览秀场回顾</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Show Recap Section -->
+            <section id="show">
+                <div class="section-header">
+                    <h2 class="section-title">秀场盛况回顾</h2>
+                    <a href="#" class="section-more">查看完整时间轴 →</a>
+                </div>
+                <div class="show-recap">
+                    <div class="show-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2015年12月8日</div>
+                            <h3>纽约时代广场盛大举办</h3>
+                            <p>2015年的维多利亚的秘密大秀打破传统，在纽约时代广场的杜比剧院举行。这是维密首次在周五晚上播出，吸引了全球超过一亿观众在线观看。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">开场天使：Adriana Lima</div>
+                            <h3>传奇天使的压轴时刻</h3>
+                            <p>Adriana Lima再次作为开场天使登场，身着标志性的“Fireworks”系列，以全黑羽毛造型引爆全场，展现了她作为维密门面的非凡魅力。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">重磅登场：Taylor Swift</div>
+                            <h3>跨界巨星首次登台</h3>
+                            <p>流行天后Taylor Swift作为特邀嘉宾首次登上维密秀场，不仅带来了精彩的表演，还与Angel Lily Aldridge共同演绎了经典曲目“Style”。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">“Fantasy Bra”揭晓</div>
+                            <h3>价值数百万美元的珠宝</h3>
+                            <p>本年度的Fantasy Bra名为“Royal Fantasy”，由Lily Aldridge佩戴，由Mouawad珠宝工作室制作，镶嵌超过6500颗宝石，价值约1000万美元。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Collections Section -->
+            <section id="collections">
+                <div class="section-header">
+                    <h2 class="section-title">经典系列解析</h2>
+                    <a href="#" class="section-more">浏览更多商品 →</a>
+                </div>
+                <div class="highlights-grid">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/lingerie1/400/300" alt="Bombshell Collection" class="card-img">
+                        <div class="card-body">
+                            <span class="card-tag">经典系列</span>
+                            <h3 class="card-title">Bombshell 系列</h3>
+                            <p class="card-text">该系列专为自信、充满活力的女性设计，采用大胆的配色和蕾丝工艺，展现女性独特的性感魅力。</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/lingerie2/400/300" alt="Love Spell Collection" class="card-img">
+                        <div class="card-body">
+                            <span class="card-tag">浪漫系列</span>
+                            <h3 class="card-title">Love Spell 系列</h3>
+                            <p class="card-text">灵感源自浪漫的夜晚，采用柔和的粉色和紫色调，搭配心形元素，营造温柔甜蜜的氛围。</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/lingerie3/400/300" alt="The Pink Collection" class="card-img">
+                        <div class="card-body">
+                            <span class="card-tag">少女系列</span>
+                            <h3 class="card-title">PINK 系列</h3>
+                            <p class="card-text">针对年轻女性市场的标志性系列，色彩鲜艳，款式休闲，是校园生活的时尚表达。</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Angels Section -->
+            <section id="angels">
+                <div class="section-header">
+                    <h2 class="section-title">2015天使阵容</h2>
+                </div>
+                <div class="angels-grid">
+                    <div class="angel-card">
+                        <img src="https://picsum.photos/seed/angel1/300/300" alt="Adriana Lima" class="angel-img">
+                    </div>
+                    <div class="angel-card">
+                        <img src="https://picsum.photos/seed/angel2/300/300" alt="Lily Aldridge" class="angel-img">
+                    </div>
+                    <div class="angel-card">
+                        <img src="https://picsum.photos/seed/angel3/300/300" alt="Cara Delevingne" class="angel-img">
+                    </div>
+                    <div class="angel-card">
+                        <img src="https://picsum.photos/seed/angel4/300/300" alt="Taylor Swift" class="angel-img">
+                    </div>
+                    <div class="angel-card">
+                        <img src="https://picsum.photos/seed/angel5/300/300" alt="Gigi Hadid" class="angel-img">
+                    </div>
+                    <div class="angel-card">
+                        <img src="https://picsum.photos/seed/angel6/300/300" alt="Bella Hadid" class="angel-img">
+                    </div>
+                </div>
+            </section>
+
+            <!-- History/Info Section -->
+            <section id="history">
+                <div class="section-header">
+                    <h2 class="section-title">品牌历史与背景</h2>
+                </div>
+                <article style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: var(--card-shadow);">
+                    <h3 style="margin-bottom: 15px; font-size: 1.3rem;">关于维多利亚的秘密</h3>
+                    <p style="margin-bottom: 15px; color: var(--text-gray);">
+                        维多利亚的秘密成立于1977年，最初名为“The Limited Stores”。经过多年的发展，它已成为全球最知名的内衣和睡衣品牌之一。2015年的大秀不仅展示了最新的时尚潮流，也反映了当时品牌在全球化营销和娱乐化传播方面的成功尝试。
+                    </p>
+                    <p style="margin-bottom: 15px; color: var(--text-gray);">
+                        <strong>时尚意义：</strong> 2015年的秀场设计融合了未来主义与古典奢华，从灯光效果到服装剪裁，都体现了品牌对于“性感”与“优雅”平衡的极致追求。每一套“Fantasy Bra”的发布，都是当时全球时尚媒体关注的焦点。
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <p style="font-size: 0.9rem; color: #999;">本站致力于为时尚爱好者提供关于维多利亚的秘密历史与文化的深度解析与回顾。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#show">秀场回顾</a></li>
+                    <li><a href="#collections">经典系列</a></li>
+                    <li><a href="#angels">天使档案</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>相关链接</h4>
+                <ul>
+                    <li><a href="#">官方网站</a></li>
+                    <li><a href="#">时尚杂志</a></li>
+                    <li><a href="#">内衣百科</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2015-2024 维多利亚的秘密回顾站 | 仅供学习与展示使用</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('nav-list').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
