@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粗口的士高 - 80年代复古迪斯科文化与经典舞曲资源库</title>
+    <meta name="description" content="粗口的士高 - 深度探索80年代迪斯科文化，收录经典Disco、House及复古舞曲资源，提供舞厅怀旧指南与音乐鉴赏。">
+    <meta name="keywords" content="粗口的士高,迪斯科,复古舞曲,80年代音乐,舞厅文化,Disco资源">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f0f12;
+            --card-bg: #1a1a1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent: #ff0055;
+            --accent-glow: rgba(255, 0, 85, 0.4);
+            --secondary: #00d4ff;
+            --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-stack);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--secondary));
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Header & Nav */
+        header {
+            background: rgba(15, 15, 18, 0.95);
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--secondary);
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .cta-btn {
+            background: var(--accent);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--accent-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://picsum.photos/seed/disco/1920/1080') no-repeat center center/cover;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--secondary);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-color: #444;
+        }
+
+        .card-image {
+            height: 180px;
+            background-color: #222;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255,0,85,0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .play-icon {
+            opacity: 1;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+
+        /* Feature Section (Text + Image) */
+        .feature-section {
+            padding: 80px 0;
+            background: #151518;
+        }
+
+        .feature-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .feature-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .feature-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .feature-text p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ddd;
+        }
+
+        .feature-list li::before {
+            content: '◆';
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+
+        .feature-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .feature-image img {
+            width: 100%;
+            display: block;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #fff;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background: #222;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-muted);
+            display: none;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: #050507;
+            padding: 50px 0 20px;
+            border-top: 1px solid #222;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #1a1a1e;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <span>◆</span> 粗口的士高
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">经典歌单</a></li>
+                    <li><a href="#">舞厅指南</a></li>
+                    <li><a href="#">怀旧资讯</a></li>
+                    <li><a href="#" class="cta-btn">加入社区</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>回到80年代<br>感受霓虹灯下的节奏</h1>
+                <p>这里是粗口的士高，汇聚全球最纯正的复古迪斯科与House舞曲资源。重温黄金时代的舞池记忆，探索音乐背后的文化。</p>
+                <a href="#" class="cta-btn" style="font-size: 1.1rem; padding: 12px 30px;">开始探索</a>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>5000+</h3>
+                        <p>复古舞曲</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>120+</h3>
+                        <p>经典舞厅</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50k+</h3>
+                        <p>乐迷社区</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <section class="container">
+            <h2 class="section-title">热门精选</h2>
+            <div class="content-grid">
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/disco1/400/250" alt="Disco Chart">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">本周榜单</span>
+                        <h3>80年代迪斯科金曲Top 10</h3>
+                        <p>收录了Van McCoy、Gloria Gaynor等大师的巅峰之作，带你重温那个色彩斑斓的年代。</p>
+                        <div class="card-meta">
+                            <span>更新于 2小时前</span>
+                            <span>1.2w 播放</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/house/400/250" alt="House Music">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">深度解析</span>
+                        <h3>House音乐的前世今生</h3>
+                        <p>从芝加哥地下俱乐部到全球舞厅，了解House音乐如何成为现代电子舞曲的基石。</p>
+                        <div class="card-meta">
+                            <span>更新于 1天前</span>
+                            <span>8.5k 阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/club/400/250" alt="Club Culture">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">舞厅文化</span>
+                        <h3>如何打造完美的Disco舞厅</h3>
+                        <p>灯光、音响、氛围——全面解析营造沉浸式舞池体验的关键要素。</p>
+                        <div class="card-meta">
+                            <span>更新于 3天前</span>
+                            <span>5.6k 阅读</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Feature Section -->
+        <section class="feature-section">
+            <div class="container feature-container">
+                <div class="feature-text">
+                    <h2>不仅仅是音乐，更是一种生活方式</h2>
+                    <p>粗口的士高致力于保存和传播复古舞曲文化。我们相信，每一首Disco背后都有一段值得被铭记的历史。在这里，你不仅能找到高音质的音乐文件，还能通过我们的指南了解如何正确地“Groove”。</p>
+                    <ul class="feature-list">
+                        <li>无损音质复古舞曲下载</li>
+                        <li>各地复古舞厅开业与活动日历</li>
+                        <li>资深DJ的混音技巧教学</li>
+                        <li>复古时尚穿搭与配饰推荐</li>
+                    </ul>
+                </div>
+                <div class="feature-image">
+                    <img src="https://picsum.photos/seed/dancers/600/400" alt="Dancing in Disco">
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container faq-section">
+            <h2 class="section-title">常见问题</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">什么是“粗口的士高”？</div>
+                <div class="faq-answer">
+                    这是一个专注于复古迪斯科（Disco）与House音乐文化的网络社区与资源库。名字取自那个年代舞厅中特有的、直白而充满活力的氛围。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">如何获取高音质的舞曲资源？</div>
+                <div class="faq-answer">
+                    我们提供经过精心修复的24-bit/44.1kHz高品质音频下载。请注册会员后，在“资源库”分类中查找你喜欢的曲目。
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">网站上的舞厅信息是否准确？</div>
+                <div class="faq-answer">
+                    我们与多家资深DJ及舞厅经营者合作，定期更新舞厅的营业时间与活动安排，但也建议您出行前通过电话再次确认。
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">网站简介</a></li>
+                        <li><a href="#">加入团队</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>资源分类</h4>
+                    <ul>
+                        <li><a href="#">Disco经典</a></li>
+                        <li><a href="#">House音乐</a></li>
+                        <li><a href="#">Techno</a></li>
+                        <li><a href="#">电子合成器</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">使用条款</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">反馈建议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 10px;">获取最新的复古音乐资讯与舞厅动态。</p>
+                    <a href="#" class="cta-btn">关注公众号</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 粗口的士高 | 保留所有权利. 本站内容仅供文化交流与学习参考。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                // Close others (optional, kept simple here)
+                document.querySelectorAll('.faq-item').forEach(child => {
+                    if (child !== parent) child.classList.remove('active');
+                });
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
