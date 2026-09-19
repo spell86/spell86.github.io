@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>川北医学院就业-毕业生就业服务平台与职业发展指南</title>
+    <meta name="description" content="川北医学院就业网提供权威的毕业生就业信息、招聘公告、实习基地及职业规划指导。收录附属医院及医疗卫生系统优质岗位，助力北医学子实现高质量就业。">
+    <meta name="keywords" content="川北医学院就业,川北医学院招聘,川北医学院毕业生就业,北医就业,医疗卫生招聘">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #00a8e8;
+            --accent-color: #f39c12;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f8f9fa;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 14px;
+            color: var(--text-gray);
+            font-weight: 400;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .btn-login {
+            padding: 8px 20px;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .btn-login:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .search-box {
+            background: var(--white);
+            padding: 10px;
+            border-radius: 50px;
+            display: inline-flex;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            outline: none;
+            border-radius: 50px 0 0 50px;
+        }
+
+        .search-box button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 10px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background-color: #004494;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background-color: var(--white);
+            padding: 20px 0;
+            margin-top: -30px;
+            position: relative;
+            z-index: 10;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Main Content Layout */
+        .main-content {
+            padding: 40px 0;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+        }
+
+        /* Section Styles */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-dark);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        .section-more {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .section-more:hover {
+            color: var(--primary-color);
+        }
+
+        /* Job List Card */
+        .job-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            border: 1px solid #eee;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .job-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            border-color: var(--secondary-color);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .job-tags {
+            display: flex;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .tag-hospital {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .tag-urgent {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+
+        .job-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+
+        .job-info span {
+            display: flex;
+            align-items: center;
+        }
+
+        .job-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .company-name {
+            font-size: 14px;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .post-time {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .btn-view {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .btn-view:hover {
+            text-decoration: underline;
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .guide-list li {
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 12px;
+        }
+
+        .guide-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .guide-list a {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .guide-list a:hover {
+            color: var(--primary-color);
+        }
+
+        .guide-list span {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .notice-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .notice-item:last-child {
+            border-bottom: none;
+        }
+
+        .notice-link {
+            color: var(--text-dark);
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .notice-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Campus Recruitment */
+        .campus-recruitment {
+            margin-top: 30px;
+        }
+
+        .recruit-tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .recruit-tab {
+            padding-bottom: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-gray);
+            position: relative;
+        }
+
+        .recruit-tab.active {
+            color: var(--primary-color);
+        }
+
+        .recruit-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .recruit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .recruit-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        .recruit-img {
+            height: 160px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .recruit-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .recruit-content {
+            padding: 15px;
+        }
+
+        .recruit-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .recruit-dept {
+            font-size: 13px;
+            color: var(--text-gray);
+            margin-bottom: 10px;
+        }
+
+        .recruit-btn {
+            display: block;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-info h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-info p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                川北医学院就业
+                <span>官方服务平台</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">单位招聘</a></li>
+                    <li><a href="#">校园招聘</a></li>
+                    <li><a href="#">就业指导</a></li>
+                    <li><a href="#">政策法规</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-login">个人登录 / 注册</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>连接未来，从这里启航</h1>
+            <p>川北医学院毕业生就业服务平台，汇聚医疗卫生系统优质岗位，为您提供一站式求职服务。</p>
+            <div class="search-box">
+                <input type="text" placeholder="搜索职位、医院或地区...">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number">98.5%</div>
+                <div class="stat-label">初次就业率</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">合作医院单位</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1500+</div>
+                <div class="stat-label">年度提供岗位</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6大</div>
+                <div class="stat-label">就业指导类别</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-content">
+        <!-- Left Column -->
+        <main>
+            <!-- Latest Jobs -->
+            <section class="job-section">
+                <div class="section-header">
+                    <h2 class="section-title">最新招聘公告</h2>
+                    <a href="#" class="section-more">查看全部 &gt;</a>
+                </div>
+
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="job-title">四川省人民医院 2024年公开招聘启事</div>
+                        <div class="job-tags">
+                            <span class="tag tag-hospital">公立医院</span>
+                            <span class="tag tag-urgent">急招</span>
+                        </div>
+                    </div>
+                    <div class="job-info">
+                        <span>📍 四川省成都市</span>
+                        <span>🏥 临床医学、护理学、药学等专业</span>
+                        <span>💰 待遇：提供住宿/五险一金</span>
+                        <span>📅 报名截止：2024-05-20</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="company-name">四川省人民医院人力资源部</div>
+                        <a href="#" class="btn-view">查看详情 &gt;</a>
+                    </div>
+                </article>
+
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="job-title">川北医学院附属医院 2024年人才引进计划</div>
+                        <div class="job-tags">
+                            <span class="tag tag-hospital">附属医院</span>
+                        </div>
+                    </div>
+                    <div class="job-info">
+                        <span>📍 四川省南充市</span>
+                        <span>🏥 高层次人才、骨干医师</span>
+                        <span>💰 待遇：安家费/科研启动金</span>
+                        <span>📅 报名截止：2024-06-15</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="company-name">川北医学院附属第一医院</div>
+                        <a href="#" class="btn-view">查看详情 &gt;</a>
+                    </div>
+                </article>
+
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="job-title">中国医学科学院北京协和医院 护理人员招聘</div>
+                        <div class="job-tags">
+                            <span class="tag tag-hospital">三甲医院</span>
+                        </div>
+                    </div>
+                    <div class="job-info">
+                        <span>📍 北京市东城区</span>
+                        <span>🏥 护理学本科及以上学历</span>
+                        <span>💰 待遇：薪资面议/绩效奖金</span>
+                        <span>📅 报名截止：2024-05-25</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="company-name">北京协和医院招聘办</div>
+                        <a href="#" class="btn-view">查看详情 &gt;</a>
+                    </div>
+                </article>
+
+                <article class="job-card">
+                    <div class="job-header">
+                        <div class="job-title">成都医学院第一附属医院 检验科技术人员招聘</div>
+                        <div class="job-tags">
+                            <span class="tag tag-hospital">公立医院</span>
+                        </div>
+                    </div>
+                    <div class="job-info">
+                        <span>📍 四川省成都市</span>
+                        <span>🏥 医学检验技术/临床检验</span>
+                        <span>💰 待遇：五险一金/带薪休假</span>
+                        <span>📅 报名截止：2024-05-30</span>
+                    </div>
+                    <div class="job-footer">
+                        <div class="company-name">成都医学院第一附属医院</div>
+                        <a href="#" class="btn-view">查看详情 &gt;</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Campus Recruitment -->
+            <section class="campus-recruitment">
+                <div class="section-header">
+                    <h2 class="section-title">校园专场招聘</h2>
+                    <a href="#" class="section-more">更多专场 &gt;</a>
+                </div>
+                <div class="recruit-tabs">
+                    <div class="recruit-tab active">近期专场</div>
+                    <div class="recruit-tab">医学专场</div>
+                    <div class="recruit-tab">综合专场</div>
+                </div>
+                <div class="recruit-grid">
+                    <div class="recruit-card">
+                        <div class="recruit-img" style="background-image: url('https://picsum.photos/seed/med1/400/300');">
+                            <span class="recruit-badge">即将开始</span>
+                        </div>
+                        <div class="recruit-content">
+                            <h3 class="recruit-title">川北医学院2024届毕业生春季双选会</h3>
+                            <p class="recruit-dept">地点：川北医学院学术交流中心</p>
+                            <a href="#" class="recruit-btn">预约参会</a>
+                        </div>
+                    </div>
+                    <div class="recruit-card">
+                        <div class="recruit-img" style="background-image: url('https://picsum.photos/seed/med2/400/300');">
+                            <span class="recruit-badge">进行中</span>
+                        </div>
+                        <div class="recruit-content">
+                            <h3 class="recruit-title">绵阳市中心医院专场宣讲会</h3>
+                            <p class="recruit-dept">地点：行政楼第二会议室</p>
+                            <a href="#" class="recruit-btn">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="recruit-card">
+                        <div class="recruit-img" style="background-image: url('https://picsum.photos/seed/med3/400/300');">
+                            <span class="recruit-badge">已结束</span>
+                        </div>
+                        <div class="recruit-content">
+                            <h3 class="recruit-title">西南医科大学附属医院招聘宣讲</h3>
+                            <p class="recruit-dept">地点：就业中心报告厅</p>
+                            <a href="#" class="recruit-btn" style="background-color: #ccc;">回顾回放</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Column -->
+        <aside>
+            <div class="sidebar-card">
+                <h3 class="section-title" style="margin-bottom: 15px; border: none; padding: 0;">办事指南</h3>
+                <ul class="guide-list">
+                    <li><a href="#"><span>毕业生就业协议书签发</span> <span>2024-05-10</span></a></li>
+                    <li><a href="#"><span>档案转递流程说明</span> <span>2024-05-08</span></a></li>
+                    <li><a href="#"><span>求职补贴申请条件</span> <span>2024-05-05</span></a></li>
+                    <li><a href="#"><span>就业登记表填写规范</span> <span>2024-05-01</span></a></li>
+                    <li><a href="#"><span>离校手续办理清单</span> <span>2024-04-28</span></a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 class="section-title" style="margin-bottom: 15px; border: none; padding: 0;">通知公告</h3>
+                <div class="notice-item">
+                    <a href="#" class="notice-link">关于开展2024届毕业生就业统计工作的通知</a>
+                </div>
+                <div class="notice-item">
+                    <a href="#" class="notice-link">2024年全省高校毕业生春季大型招聘会日程安排</a>
+                </div>
+                <div class="notice-item">
+                    <a href="#" class="notice-link">川北医学院2024年毕业生就业质量年度报告</a>
+                </div>
+                <div class="notice-item">
+                    <a href="#" class="notice-link">关于举办“医路有你”简历制作与面试技巧大赛的通知</a>
+                </div>
+            </div>
+
+            <div class="sidebar-card" style="background-color: #e3f2fd; border: 1px solid #bbdefb;">
+                <h3 class="section-title" style="margin-bottom: 15px; border: none; padding: 0; color: #0d47a1;">就业指导</h3>
+                <p style="font-size: 14px; color: #333; margin-bottom: 10px;">如何写出一份优秀的医学简历？</p>
+                <a href="#" style="font-size: 13px; color: #1976d2; font-weight: 600;">点击观看视频教程 &gt;</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>川北医学院就业网</h3>
+                    <p>地址：四川省南充市顺庆区清源大道二段130号</p>
+                    <p>邮编：637007</p>
+                    <p>电话：0817-XXXXXXX</p>
+                    <p>邮箱：jyc@ncms.edu.cn</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">毕业生登录系统</a></li>
+                        <li><a href="#">用人单位登录</a></li>
+                        <li><a href="#">档案查询</a></li>
+                        <li><a href="#">就业地图</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>相关链接</h4>
+                    <ul>
+                        <li><a href="#">川北医学院官网</a></li>
+                        <li><a href="#">四川省教育厅</a></li>
+                        <li><a href="#">国家公务员局</a></li>
+                        <li><a href="#">国家卫生健康委</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">就业处微博</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 川北医学院就业指导中心 版权所有 | ICP备XXXXXXXX号
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
