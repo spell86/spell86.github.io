@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都皮具-高端定制与匠心工艺展示平台</title>
+    <meta name="description" content="花都皮具官网，专注于高端真皮制品的研发、设计与销售。提供商务公文包、时尚双肩包、精品皮具及定制服务，融合传统工艺与现代美学，满足商务与个人出行需求。">
+    <meta name="keywords" content="花都皮具,皮具定制,真皮包包,商务公文包,皮具保养,广州花都皮具厂">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        /* 全局重置与基础样式 */
+        :root {
+            --primary-color: #2c2c2c;
+            --secondary-color: #8c7b75;
+            --accent-color: #c0392b;
+            --bg-light: #f9f8f6;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --white: #ffffff;
+            --border-radius: 4px;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-md: 0 8px 16px rgba(0,0,0,0.12);
+            --container-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+            margin-left: 5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 6px 16px;
+            font-size: 14px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 600px;
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/leather123/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 12px 35px;
+            font-size: 16px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: #a93226;
+            transform: translateY(-2px);
+        }
+
+        /* 精选分类 */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            font-size: 16px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background-color: var(--bg-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .category-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .category-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .category-card:hover .category-img img {
+            transform: scale(1.1);
+        }
+
+        .category-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .category-info p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* 产品展示 */
+        .product-section {
+            background-color: var(--bg-light);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .product-img {
+            height: 280px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 2px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-desc {
+            font-size: 13px;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .btn-text {
+            font-size: 13px;
+            color: var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        /* 工艺介绍 */
+        .process-section {
+            background-color: var(--white);
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #e0e0e0;
+            z-index: 0;
+        }
+
+        .step-item {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--white);
+            border: 2px solid var(--secondary-color);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--secondary-color);
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .step-item:hover .step-icon {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        .step-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .step-desc {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* 常见问题 */
+        .faq-section {
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            color: var(--secondary-color);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px; /* 近似高度 */
+            padding-bottom: 20px;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--primary-color);
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 992px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .process-steps::before {
+                display: none;
+            }
+            .step-item {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 15px 0;
+            }
+            .nav-menu {
+                order: 3;
+                width: 100%;
+                justify-content: center;
+                margin-top: 15px;
+                gap: 15px;
+            }
+            .header-actions {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .process-steps {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 头部导航 -->
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">花都皮具<span>.</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#products">精品系列</a></li>
+                    <li><a href="#categories">皮具分类</a></li>
+                    <li><a href="#craft">匠心工艺</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-outline">定制服务</a>
+                <a href="#" class="btn-outline">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>传承匠心，定义卓越</h1>
+            <p>源自花都皮具之都，专注高端真皮制品研发。每一处缝线都凝聚专注，每一寸纹理都诉说着品质。</p>
+            <a href="#products" class="btn-primary">探索系列</a>
+        </div>
+    </section>
+
+    <!-- 精选分类 -->
+    <section id="categories" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>多元品类，满足不同场景</h2>
+                <p>从商务出行到休闲时尚，我们提供全方位的皮具解决方案</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://picsum.photos/seed/bag1/400/300.jpg" alt="商务公文包">
+                    </div>
+                    <div class="category-info">
+                        <h3>商务公文包</h3>
+                        <p>经典设计，耐用耐磨，彰显专业形象</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://picsum.photos/seed/bag2/400/300.jpg" alt="时尚双肩包">
+                    </div>
+                    <div class="category-info">
+                        <h3>时尚双肩包</h3>
+                        <p>人体工学设计，大容量收纳，轻便舒适</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://picsum.photos/seed/bag3/400/300.jpg" alt="女士手拿包">
+                    </div>
+                    <div class="category-info">
+                        <h3>女士手拿包</h3>
+                        <p>精致小巧，优雅时尚，提升气场</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-img">
+                        <img src="https://picsum.photos/seed/bag4/400/300.jpg" alt="旅行箱包">
+                    </div>
+                    <div class="category-info">
+                        <h3>旅行箱包</h3>
+                        <p>坚固耐用，防刮耐磨，陪伴远行</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门产品 -->
+    <section id="products" class="section product-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>当季热销</h2>
+                <p>精选优质头层牛皮，匠心工艺打造</p>
+            </div>
+            <div class="product-grid">
+                <!-- 产品 1 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <span class="product-tag">热销</span>
+                        <img src="https://picsum.photos/seed/product1/400/400.jpg" alt="经典商务公文包">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">经典商务公文包 - 深棕色</h3>
+                        <p class="product-desc">采用头层牛皮，耐磨防刮，内置多层隔层，适合商务人士日常携带。</p>
+                        <div class="product-footer">
+                            <span class="price">¥ 1,299</span>
+                            <a href="#" class="btn-text">查看详情</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 产品 2 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/product2/400/400.jpg" alt="都市休闲双肩包">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">都市休闲双肩包 - 黑色</h3>
+                        <p class="product-desc">轻量化设计，背负系统舒适，适合学生及职场新人使用。</p>
+                        <div class="product-footer">
+                            <span class="price">¥ 899</span>
+                            <a href="#" class="btn-text">查看详情</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 产品 3 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <span class="product-tag">新品</span>
+                        <img src="https://picsum.photos/seed/product3/400/400.jpg" alt="手工制作钱包">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">手工制作长款钱包 - 棕色</h3>
+                        <p class="product-desc">传统缝线工艺，耐磨耐用，收纳空间合理，彰显品味。</p>
+                        <div class="product-footer">
+                            <span class="price">¥ 459</span>
+                            <a href="#" class="btn-text">查看详情</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 产品 4 -->
+                <article class="product-card">
+                    <div class="product-img">
+                        <img src="https://picsum.photos/seed/product4/400/400.jpg" alt="商务公文包">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">商务公文包 - 深蓝色</h3>
+                        <p class="product-desc">简约大气，沉稳内敛，适合商务会议及出差使用。</p>
+                        <div class="product-footer">
+                            <span class="price">¥ 1,599</span>
+                            <a href="#" class="btn-text">查看详情</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工艺介绍 -->
+    <section id="craft" class="section process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>匠心工艺</h2>
+                <p>从选材到成品，每一个环节都严格把控</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-icon">1</div>
+                    <h3 class="step-title">精选原料</h3>
+                    <p class="step-desc">严选头层牛皮，纹理自然，手感柔软，无疤痕杂质。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">2</div>
+                    <h3 class="step-title">精密裁剪</h3>
+                    <p class="step-desc">经验丰富的师傅手工裁剪，确保尺寸精准，线条流畅。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">3</div>
+                    <h3 class="step-title">精细缝制</h3>
+                    <p class="step-desc">采用双针走线工艺，针脚均匀细密，结实耐用。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">4</div>
+                    <h3 class="step-title">质检包装</h3>
+                    <p class="step-desc">全流程质检，确保产品无瑕疵，精美包装送达。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题解答</h2>
+                <p>关于花都皮具的选购与保养指南</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">头层牛皮和二层牛皮有什么区别？</div>
+                    <div class="faq-answer">
+                        头层牛皮保留了天然的皮肤纹理和弹性，耐磨透气，使用寿命长；二层牛皮经过化学处理，表面光滑，价格相对较低，但耐用性和手感不如头层皮。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">花都皮具的产品保修期是多久？</div>
+                    <div class="faq-answer">
+                        正常使用情况下，我们的产品提供一年质保服务。如因非人为因素出现质量问题，可提供免费维修或更换服务。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何保养真皮包包？</div>
+                    <div class="faq-answer">
+                        避免长时间暴晒和接触尖锐物体。不使用时，建议放入防尘袋中，填充柔软纸张保持形状。定期使用专用皮革护理油擦拭保养。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">支持定制服务吗？</div>
+                    <div class="faq-answer">
+                        是的，我们提供个性化定制服务。您可以选择颜色、尺寸以及刻字服务，打造独一无二的专属皮具。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">花都皮具<span>.</span></div>
+                    <p>作为花都皮具行业的代表性品牌，我们致力于将传统工艺与现代设计完美融合，为消费者提供高品质的皮具产品。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">产品中心</a></li>
+                        <li><a href="#">定制服务</a></li>
+                        <li><a href="#">加盟合作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>客户服务</h4>
+                    <ul>
+                        <li><a href="#">售后政策</a></li>
+                        <li><a href="#">物流查询</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <p>电话：400-123-4567</p>
+                    <p>邮箱：service@huadu-leather.com</p>
+                    <p>地址：广州市花都区新华街道皮革城A座101</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 花都皮具有限公司 版权所有 | 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 折叠交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
